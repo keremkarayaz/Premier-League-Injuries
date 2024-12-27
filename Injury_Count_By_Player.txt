@@ -1,2 +1,0 @@
-Injury_Count_By_Player = 
-COUNTROWS('player_injuries_impact')
