@@ -1,8 +1,0 @@
-Average Recovery by Injury Type = 
-AVERAGEX(
-    FILTER(
-        'player_injuries_impact',
-        'player_injuries_impact'[Injury] = "Hamstring"
-    ),
-    DATEDIFF('player_injuries_impact'[Date of Injury], 'player_injuries_impact'[Date of return], DAY)
-)
