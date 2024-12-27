@@ -1,5 +1,0 @@
-Average Age of Injured Players = 
-AVERAGEX(
-    'player_injuries_impact',
-    'player_injuries_impact'[Age]   -- 'Age' burada oyuncuların yaş bilgisini temsil etmeli
-)
