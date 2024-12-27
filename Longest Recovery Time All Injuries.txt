@@ -1,5 +1,0 @@
-Longest Recovery Time All Injuries = 
-MAXX(
-    'player_injuries_impact',
-    DATEDIFF('player_injuries_impact'[Date of Injury], 'player_injuries_impact'[Date of return], DAY)
-)
