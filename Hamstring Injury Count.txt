@@ -1,5 +1,0 @@
-Hamstring Injury Count = 
-CALCULATE(
-    COUNTROWS('player_injuries_impact'),
-    SEARCH("Hamstring", 'player_injuries_impact'[Injury], 1, 0) > 0
-)
