@@ -1,0 +1,9 @@
+Most Injured Player = 
+CALCULATE(
+    MAX('player_injuries_impact'[Name]),
+    FILTER(
+        'player_injuries_impact',
+        COUNTROWS(FILTER('player_injuries_impact', 'player_injuries_impact'[Name] = EARLIER('player_injuries_impact'[Name]))) = 
+        MAXX(ALL('player_injuries_impact'[Name]), COUNTROWS(FILTER('player_injuries_impact', 'player_injuries_impact'[Name] = EARLIER('player_injuries_impact'[Name]))))
+    )
+)
